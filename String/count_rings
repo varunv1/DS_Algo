@@ -1,0 +1,22 @@
+from collections import defaultdict
+
+
+class Solution:
+    def countPoints(self, rings: str) -> int:
+        red = set()
+        green = set()
+        blue = set()
+        i = 0
+        while(i < len(rings)):
+            if rings[i] == 'B':
+                blue.add(rings[i+1])
+                blue.intersection(red).intersection(green)
+                # add in blue
+            elif rings[i] == 'G':
+                # add in green
+                pass
+            elif rings[i] == 'R':
+                pass
+                # add in green
+            i += 2
+        print(red)
