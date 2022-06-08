@@ -13,14 +13,15 @@ def bubble_sort(arr):
             break
     return arr
 
+
 def selection_sort(arr):
     # select the min and put it in the array
     for i in range(len(arr)):
-        
+
+
 t1 = time.time()
 print(bubble_sort([5, 2, 7, 1, 9]))
 t2 = time.time()
 print(bubble_sort([1, 2, 3, 4, 9]))
 t3 = time.time()
 print((t3-t2) - (t2-t1) > 0)
-# print(t3-t2)
